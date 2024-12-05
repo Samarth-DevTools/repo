@@ -1,6 +1,6 @@
 name: Generate ascii artifact
 on:
-    push
+    workflow_dispatch: 
 jobs:
     build-job1:
         runs-on: ubuntu-latest
