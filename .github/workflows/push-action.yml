@@ -2,13 +2,13 @@ name: workflow-for-push
 on: 
   workflow_dispatch:
 jobs:
-    docker:
+    build:
       runs-on: ubuntu-latest
       steps:
         - name: checkout repo
           uses: actions/checkout@v4
 
-        - name: instal docekr
+        - name: instal docker
           run: echo "Hello world"
 
         - name: List the files
@@ -17,4 +17,3 @@ jobs:
         - name: Read the text file
           run: cat README.md
      
-    
