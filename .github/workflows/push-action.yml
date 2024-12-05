@@ -1,0 +1,20 @@
+name: workflow-for-push
+on: 
+  push
+jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout repo
+          uses: actions/checkout@v4
+
+        - name: Print My first github action
+          run: echo "Hello world"
+
+        - name: List the files
+          run: ls 
+
+        - name: Read the text file
+          run: cat README.md
+     
+    
