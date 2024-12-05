@@ -1,14 +1,14 @@
 name: workflow-for-push
 on: 
-  workflow_dispatch:
+  push:
 jobs:
-    build:
+    docker:
       runs-on: ubuntu-latest
       steps:
         - name: checkout repo
           uses: actions/checkout@v4
 
-        - name: Print My first github action
+        - name: instal docekr
           run: echo "Hello world"
 
         - name: List the files
