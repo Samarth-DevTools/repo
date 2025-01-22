@@ -1,2 +1,1 @@
-Hello world
-good evening
+print("Hello World")
